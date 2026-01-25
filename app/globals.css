@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-purple-dark: #4b03a5;
+  --color-purple-light: #b99ae0;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1280px;
+}
+
+body {
+  font-family: var(--font-playfair-display) !important;
+}
