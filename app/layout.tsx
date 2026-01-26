@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
+import Nav from "./components/Nav";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-display",
@@ -22,8 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} bg-neutral-50 text-neutral-950 antialiased`}>
+        className={`${playfair.variable} text-purple-dark bg-purple-light antialiased`}>
+        <Nav />
+
         {children}
+
+        <Footer />
       </body>
     </html>
   );

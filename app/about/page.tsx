@@ -1,3 +1,3 @@
 export default function page() {
-  return <div>About page</div>;
+  return <div className="min-h-[40vw]">About page</div>;
 }
