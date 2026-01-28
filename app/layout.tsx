@@ -23,13 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${playfair.variable} text-purple-dark bg-purple-light antialiased`}>
-        <Nav />
-
+      <body className={`${playfair.variable} antialiased`}>
         {children}
-
-        <Footer />
       </body>
     </html>
   );
