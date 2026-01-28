@@ -7,11 +7,9 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="text-purple-dark bg-purple-light">
+    <div className="text-purple-dark bg-purple-light relative min-h-screen pb-20 text-sm md:pb-22 md:text-base">
       <Nav />
-      <h1>AAAAAAAAAAA</h1>
       {children}
-
       <Footer />
     </div>
   );

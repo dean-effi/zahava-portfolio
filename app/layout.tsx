@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-display",

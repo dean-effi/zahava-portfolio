@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="pt-8 pb-5 text-center md:pt-10 md:pb-7">
+    <footer className="absolute bottom-0 w-full pb-8 text-center md:pb-10">
       © Zahava Kallus 2026 All Rights Reserved
     </footer>
   );

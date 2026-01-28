@@ -41,14 +41,14 @@ export default function Home() {
           />
         </div>
 
-        <h1 className="z-10 text-center text-base leading-tight font-semibold md:text-[32px]">
+        <h1 className="z-10 text-center text-base leading-tight font-semibold md:text-[32px] lg:text-[37px]">
           <span className="block">Hi!</span>
           I’m Zahava Kallus, and this is my work
         </h1>
       </div>
       <div
         id="work"
-        className="grid gap-8 px-8 py-9 text-2xl text-[18px] font-medium md:px-9 md:text-2xl lg:px-16.25 lg:py-18.75">
+        className="lg:text-[26px grid gap-8 px-8 py-9 text-2xl text-[18px] font-medium md:px-10 md:text-2xl lg:px-16.25 lg:py-18.75">
         {projectLinks}
       </div>
     </div>

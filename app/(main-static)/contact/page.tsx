@@ -1,3 +1,28 @@
+import Image from "next/image";
+import phone from "../../assets/contact.webp";
+
 export default function page() {
-  return <div className="min-h-[40vw]">contact page</div>;
+  return (
+    <div className="mt-10 flex flex-col items-center justify-center gap-13 px-11 text-lg font-medium md:mt-12 md:mb-8 md:gap-15 md:text-2xl lg:ml-[130px] lg:flex-row lg:justify-start lg:gap-18 lg:text-[26px]">
+      <Image width={400} src={phone} alt="" />
+
+      <div className="space-y-2 md:space-y-3">
+        <h2 className="text-xl font-semibold">Contact Me:</h2>
+        <div className="space-y-2 md:space-y-3">
+          <p>
+            <span className="font-bold">Email:</span>{" "}
+            zahava2k3@gmail.com
+          </p>
+          <p>
+            <span className="font-bold">Phone Number:</span>{" "}
+            +972-53-323-1344
+          </p>
+          <p>
+            <span className="font-bold">Based In:</span> Beit Shemesh,
+            Israel
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
