@@ -1,28 +1,59 @@
-const projectsData = [
+type Project = {
+  name: string;
+  assets: { type: "image" | "video"; src: string | string[] }[];
+};
+
+const example: Project = {
+  name: "hello",
+  assets: [
+    { type: "image", src: "6-forest guardian/1.webp" },
+    { type: "image", src: "6-forest guardian/2.webp" },
+  ],
+};
+
+console.log(example);
+
+const projectsData: Project[] = [
+  { ...example },
   {
+    ...example,
     name: "Cactus UX",
   },
   {
+    ...example,
+
     name: "Cactus Brand",
   },
   {
+    ...example,
+
     name: "Open House Festival",
   },
   {
+    ...example,
+
     name: "Wanderlust",
   },
   {
-    name: " Forest Guardian",
-  },
-  {
-    name: "The Eternal Israeli ",
-  },
-  {
-    name: " Illustration Gallery",
-  },
-  {
-    name: "Animation Gallery ",
-  },
-]
+    ...example,
 
-export default projectsData
+    name: "Forest Guardian",
+  },
+  {
+    ...example,
+
+    name: "The Eternal Israeli",
+  },
+  {
+    ...example,
+
+    name: "Illustration Gallery",
+  },
+  {
+    ...example,
+
+    name: "Animation Gallery",
+  },
+];
+
+export default projectsData;
