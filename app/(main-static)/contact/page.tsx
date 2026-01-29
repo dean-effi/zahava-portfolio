@@ -3,11 +3,16 @@ import phone from "../../assets/contact.webp";
 
 export default function page() {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center gap-13 px-11 text-lg font-medium md:mt-12 md:mb-8 md:gap-15 md:text-2xl lg:ml-[130px] lg:flex-row lg:justify-start lg:gap-18 lg:text-[26px]">
-      <Image width={400} src={phone} alt="" />
+    <div className="mt-10 flex flex-col items-center justify-center gap-13 px-11 text-lg font-medium md:mt-12 md:mb-12 md:gap-15 md:text-2xl lg:mb-0 lg:ml-[130px] lg:flex-row lg:justify-start lg:gap-18 lg:text-[26px] xl:px-20">
+      <Image
+        width={400}
+        className="w-full max-w-[400px]"
+        src={phone}
+        alt=""
+      />
 
       <div className="space-y-2 md:space-y-3">
-        <h2 className="text-xl font-semibold">Contact Me:</h2>
+        <h2 className="font-semibold">Contact Me:</h2>
         <div className="space-y-2 md:space-y-3">
           <p>
             <span className="font-bold">Email:</span>{" "}
