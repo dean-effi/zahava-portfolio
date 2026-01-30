@@ -9,6 +9,7 @@ export default function page() {
         className="w-full max-w-[300px] md:max-w-[400px]"
         src={about}
         alt=""
+        priority
       />
 
       <div className="space-y-5 md:space-y-8">

@@ -9,6 +9,7 @@ export default function page() {
         className="w-full max-w-[400px]"
         src={phone}
         alt=""
+        priority
       />
 
       <div className="space-y-2 md:space-y-3">
