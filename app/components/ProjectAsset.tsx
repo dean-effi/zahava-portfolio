@@ -12,7 +12,7 @@ export default function ProjectAsset({
   return (
     <article>
       {Array.isArray(asset.src) ? (
-        <Image src={asset.src[0]} alt="" width={500} height={400} />
+        <Image src={asset.src[0]} alt="" width={1280} height={720} />
       ) : asset.type === "video" ? (
         <video
           className="w-full"
@@ -27,14 +27,14 @@ export default function ProjectAsset({
       ) : Boolean(asset.info && info) ? (
         <InfoVisual asset={asset} info={info!} />
       ) : (
-        <Image alt="" src={asset.src} width={500} height={400} />
+        <Image alt="" src={asset.src} width={1280} height={720} />
       )}
       {asset.description && (
-        <div>
-          <h2 className="my-6 text-xl font-bold">
+        <div className="mt-5 mb-20 flex flex-col gap-3 leading-tight tracking-tight md:mt-15 md:mb-[160px] md:flex-row md:gap-18 md:text-[27px] lg:gap-35">
+          <h2 className="font-smibold font-bold">
             {asset.description?.title}
           </h2>
-          <p>{asset.description?.paragraph}</p>
+          <p className="">{asset.description?.paragraph}</p>
         </div>
       )}
     </article>

@@ -25,11 +25,10 @@ export type Project = {
 const example: Project = {
   name: "hello",
   info: {
-    course: "Mugging",
+    course: "Illustration and Innovation in the Industry",
     instructor: "Ori Hizkiya",
     partner: "Menachem begin",
     skills: "Craftsmanship",
-    role: "Architecture",
   },
   assets: [
     {
@@ -42,13 +41,39 @@ const example: Project = {
           "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
       },
     },
-    { type: "image", src: "/5-forest guardian/5.webp" },
+    {
+      type: "image",
+      src: "/5-forest guardian/5.webp",
+      description: {
+        title: "Forest guardian",
+        paragraph:
+          "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
+      },
+    },
+
+    {
+      type: "image",
+      src: ["/5-forest guardian/3.webp", "/5-forest guardian/4.webp"],
+      description: {
+        title: "Forest guardian",
+        paragraph:
+          "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
+      },
+    },
+    {
+      type: "video",
+      src: "/4.-wanderlust/8.mp4",
+      description: {
+        title: "Forest guardian",
+        paragraph:
+          "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
+      },
+    },
 
     {
       type: "image",
       src: ["/5-forest guardian/3.webp", "/5-forest guardian/4.webp"],
     },
-    { type: "video", src: "/4.-wanderlust/8.mp4" },
   ],
 };
 
