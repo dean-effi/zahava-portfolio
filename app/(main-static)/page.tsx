@@ -10,7 +10,7 @@ export default function Home() {
     return (
       <Link
         key={project.name}
-        href={project.name}>{`0${i + 1} / ${project.name}`}</Link>
+        href={project.name}>{`${project.title}`}</Link>
     );
   });
   return (

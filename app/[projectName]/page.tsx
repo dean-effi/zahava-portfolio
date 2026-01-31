@@ -30,19 +30,24 @@ export default async function ProjectPage({
         </header>
         {assetsElements}
       </main>
-      <nav className="mt-5 w-full border-t-1 border-black">
-        <ul className="mb-4 flex w-full justify-between text-xl">
+      <nav className="mt-9 w-full border-t-1 border-black md:mt-11">
+        <ul className="flex w-full justify-between p-5 text-xs md:text-base lg:p-7 lg:text-xl">
           <li>
             {projectIndex > 0 && (
               <Link href={projectsData[projectIndex - 1].name}>
-                {"<-"} previous project
+                ⟵ previous project
               </Link>
+            )}
+          </li>
+          <li className="font-medium italic">
+            {projectIndex !== projectsData.length - 1 && (
+              <Link href={"/"}>Main Page</Link>
             )}
           </li>
           <li>
             {projectIndex !== projectsData.length - 1 && (
               <Link href={projectsData[projectIndex + 1].name}>
-                next project {"->"}
+                next project ⟶
               </Link>
             )}
           </li>

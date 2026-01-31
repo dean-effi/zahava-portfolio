@@ -20,9 +20,11 @@ export type Project = {
   name: string;
   info?: Info;
   assets: Asset[];
+  title: string;
 };
 
 const example: Project = {
+  title: "aaaaaaaaaaaaaaaaa",
   name: "hello",
   info: {
     course: "Illustration and Innovation in the Industry",
@@ -78,43 +80,50 @@ const example: Project = {
 };
 
 const projectsData: Project[] = [
-  { ...example },
   {
     ...example,
     name: "Cactus UX",
+    title: "01 / Cactus UX  / Startup course  / 2024-2025",
   },
   {
     ...example,
 
     name: "Cactus Brand",
+    title: "02 / Cactus Brand  /Startup course  / 2024-2025",
   },
   {
     ...example,
+    title: "03 / Open House Festival  / Branding course  / 2024-2025",
 
     name: "Open House Festival",
   },
   {
     ...example,
+    title: "04 / Wanderlust / Branding course  / 2024",
 
     name: "Wanderlust",
   },
   {
     ...example,
+    title: "05 / Forest Guardian  / Illustration course  / 2025",
 
     name: "Forest Guardian",
   },
   {
     ...example,
+    title: "06 / The Eternal Israeli / Typography course  / 2024",
 
     name: "The Eternal Israeli",
   },
   {
     ...example,
+    title: "07 / Illustration Gallery/ Illustration  / 2022- 2025",
 
     name: "Illustration Gallery",
   },
   {
     ...example,
+    title: "08 / Animation Gallery / Animation  / 2022- 2025",
 
     name: "Animation Gallery",
   },
