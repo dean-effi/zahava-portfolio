@@ -1,7 +1,7 @@
 import projectsData from "@/projectsData";
 import { notFound } from "next/navigation";
 import ProjectAsset from "../components/ProjectAsset";
-import Link from "next/link";
+import ProjectNav from "../components/ProjectNav";
 
 export async function generateStaticParams() {
   return projectsData.map(project => ({
@@ -17,42 +17,24 @@ export default async function ProjectPage({
   const projectName = decodeURIComponent((await params).projectName);
   const project = projectsData.find(p => projectName === p.name);
   const assetsElements = project?.assets.map((asset, i) => (
-    <ProjectAsset key={i} asset={asset} info={project.info} />
+    <ProjectAsset
+      key={i}
+      index={i}
+      asset={asset}
+      info={project.info}
+    />
   ));
   if (!project) notFound();
   const projectIndex = projectsData.indexOf(project);
   return (
-    <div className="bg-neutral-50 px-6 text-neutral-950 md:px-10">
-      <main className="m-auto max-w-[1100px]">
-        <header className="flex justify-between pt-6 pb-2 text-sm md:text-base lg:py-8 lg:pb-3 xl:text-xl">
-          <div>project {projectIndex + 1}.</div>
-          <h1>{project.name}</h1>
-        </header>
-        {assetsElements}
+    <div className="min-h-screen bg-neutral-50 text-neutral-950">
+      <ProjectNav
+        nextPage={projectsData[projectIndex + 1]?.name}
+        previousPage={projectsData[projectIndex - 1]?.name}
+      />
+      <main className="m-auto max-w-[1100px] px-6 md:px-10 xl:max-w-[85%] xl:px-0">
+        <div className="py-4 md:py-7 lg:py-10">{assetsElements}</div>
       </main>
-      <nav className="mt-9 w-full border-t-1 border-black md:mt-11">
-        <ul className="flex w-full justify-between p-5 text-xs md:text-base lg:p-7 lg:text-xl">
-          <li>
-            {projectIndex > 0 && (
-              <Link href={projectsData[projectIndex - 1].name}>
-                ⟵ previous project
-              </Link>
-            )}
-          </li>
-          <li className="font-medium italic">
-            {projectIndex !== projectsData.length - 1 && (
-              <Link href={"/"}>Main Page</Link>
-            )}
-          </li>
-          <li>
-            {projectIndex !== projectsData.length - 1 && (
-              <Link href={projectsData[projectIndex + 1].name}>
-                next project ⟶
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
     </div>
   );
 }

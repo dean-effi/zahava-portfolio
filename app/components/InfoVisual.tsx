@@ -25,9 +25,10 @@ export default function InfoVisual({
       <Image
         alt=""
         src={asset.src as string}
-        width={1280}
-        height={720}
+        width={1920}
+        height={1080}
         className="w-full"
+        priority
       />
       <ul className="flex flex-wrap justify-between gap-4 py-5 pb-10 capitalize md:pb-22 lg:pb-26">
         {infoBoxes}

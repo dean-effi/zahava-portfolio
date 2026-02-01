@@ -5,6 +5,7 @@
   --color-purple-light: #b99ae0;
   --breakpoint-md: 800px;
   --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1480px;
 }
 
 body {

@@ -48,7 +48,7 @@ export default function Home() {
       </div>
       <div
         id="work"
-        className="lg:text-[26px grid gap-8 px-8 py-9 text-2xl text-[18px] font-medium md:px-10 md:text-2xl lg:px-16.25 lg:py-18.75">
+        className="grid gap-8 px-8 py-9 text-2xl text-[18px] font-medium md:px-10 md:text-2xl lg:gap-10 lg:px-16.25 lg:py-18.75 lg:text-[26px] xl:px-[100px]">
         {projectLinks}
       </div>
     </div>

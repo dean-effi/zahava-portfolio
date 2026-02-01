@@ -3,7 +3,7 @@ import about from "../../assets/about2.gif";
 
 export default function page() {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center gap-13 px-11 text-sm font-medium md:mt-12 md:mb-12 md:gap-15 md:text-[20px] lg:mb-0 lg:ml-[130px] lg:flex-row lg:gap-18 lg:text-[23px]">
+    <div className="mt-10 flex flex-col items-center justify-center gap-13 px-11 text-sm font-medium md:mt-12 md:mb-12 md:gap-15 md:text-[20px] lg:mt-20 lg:mb-0 lg:ml-[130px] lg:flex-row lg:gap-18 lg:text-[23px]">
       <Image
         width={400}
         className="w-full max-w-[300px] md:max-w-[400px]"
