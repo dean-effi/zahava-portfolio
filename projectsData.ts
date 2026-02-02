@@ -52,24 +52,7 @@ const example: Project = {
           "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
       },
     },
-    {
-      type: "image",
-      src: "/5-forest guardian/5.webp",
-      description: {
-        title: "Forest guardian",
-        paragraph:
-          "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
-      },
-    },
-    {
-      type: "image",
-      src: "/5-forest guardian/5.webp",
-      description: {
-        title: "Forest guardian",
-        paragraph:
-          "Forest Guardian is a public awareness campaign led by “Grandpa Yochanan”, teaching about the effects of trash on the forest and encouraging responsibility for the environment.",
-      },
-    },
+
     {
       type: "image",
       src: "/5-forest guardian/5.webp",
@@ -91,7 +74,7 @@ const example: Project = {
     },
     {
       type: "video",
-      src: "/4.-wanderlust/8.mp4",
+      src: "/animations/3.mp4",
       description: {
         title: "Forest guardian",
         paragraph:
