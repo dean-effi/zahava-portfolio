@@ -1,6 +1,7 @@
 import { Asset, Info } from "@/projectsData";
 import Image from "next/image";
 import InfoVisual from "./InfoVisual";
+import Carousel from "./Carousel";
 
 export default function ProjectAsset({
   asset,
@@ -14,7 +15,7 @@ export default function ProjectAsset({
   return (
     <article>
       {Array.isArray(asset.src) ? (
-        <Image src={asset.src[0]} alt="" width={1920} height={1080} />
+        <Carousel images={asset.src} alt="" />
       ) : asset.type === "video" ? (
         <video
           className="w-full"

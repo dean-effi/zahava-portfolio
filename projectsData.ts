@@ -169,7 +169,12 @@ const projectsData: Project[] = [
         },
       },
       {
-        src: "/5-forest guardian/6a.webp",
+        src: [
+          "/5-forest guardian/6a.webp",
+          "/5-forest guardian/6b.webp",
+          "/5-forest guardian/6c.webp",
+          "/5-forest guardian/6d.webp",
+        ],
         type: "image",
         description: {
           title: "The Campaign",
