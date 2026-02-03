@@ -9,10 +9,19 @@ export default function Nav() {
         <li className="italic">
           <Link href={"/"}>Zahava K.</Link>{" "}
         </li>
-        <div className="space-x-4 md:space-x-5">
-          {path === "/" && <Link href={"#work"}>Work</Link>}
-          <Link href={"/contact"}>Contact</Link>
-          <Link href={"/about"}>About</Link>
+        <div className="flex gap-4 md:gap-5">
+          {path === "/" && (
+            <li>
+              <Link href={"#work"}>Work</Link>
+            </li>
+          )}
+
+          <li>
+            <Link href={"/contact"}>Contact</Link>
+          </li>
+          <li>
+            <Link href={"/about"}>About</Link>
+          </li>
         </div>
       </ul>
     </nav>
