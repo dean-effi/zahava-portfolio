@@ -4,7 +4,9 @@ import Image from "next/image";
 export default function InfoVisual({
   asset,
   info,
+  altText,
 }: {
+  altText: string;
   asset: Asset;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   info: any;
@@ -23,7 +25,7 @@ export default function InfoVisual({
   return (
     <div>
       <Image
-        alt=""
+        alt={altText}
         src={asset.src as string}
         width={1920}
         height={1080}

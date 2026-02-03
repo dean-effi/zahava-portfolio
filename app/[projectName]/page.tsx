@@ -18,6 +18,7 @@ export default async function ProjectPage({
   const project = projectsData.find(p => projectName === p.name);
   const assetsElements = project?.assets.map((asset, i) => (
     <ProjectAsset
+      altText={`${project.name} view - ${i + 1}`}
       key={i}
       index={i}
       asset={asset}
@@ -38,3 +39,13 @@ export default async function ProjectPage({
     </div>
   );
 }
+
+// export async function generateMetadata({ params }) {
+//   const { projectName } = await params;
+//   const decodedName = projectName.replace(/-/g, " ");
+
+//   return {
+//     title: `${decodedName} | Zahava Kallus Portfolio`,
+//     description: ``,
+//   };
+// }
