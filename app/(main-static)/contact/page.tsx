@@ -8,7 +8,7 @@ export default function page() {
         width={400}
         className="w-full max-w-[400px]"
         src={phone}
-        alt="an illustration of a phone booth by zahava"
+        alt="an illustration of a phone booth"
         priority
       />
 
