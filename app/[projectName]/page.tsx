@@ -28,7 +28,12 @@ export default async function ProjectPage({
   if (!project) notFound();
   const projectIndex = projectsData.indexOf(project);
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-950">
+    <div
+      className={
+        "min-h-screen bg-neutral-50 text-neutral-950" +
+        " " +
+        project.name
+      }>
       <ProjectNav
         nextPage={projectsData[projectIndex + 1]?.name}
         previousPage={projectsData[projectIndex - 1]?.name}

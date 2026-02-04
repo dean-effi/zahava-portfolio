@@ -8,6 +8,10 @@
   --breakpoint-xl: 1480px;
 }
 
+.Open {
+  background-color: white;
+}
+
 body {
   font-family: var(--font-playfair-display) !important;
 }
