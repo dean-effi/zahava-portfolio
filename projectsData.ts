@@ -77,8 +77,8 @@ The itineraries section organizes trips into active, upcoming, and past journeys
         },
       },
       {
-        type: "image",
-        src: "/1-cactus ux/4.webp",
+        type: "video",
+        src: "/1-cactus ux/5.mp4",
         description: {
           title: "Chosen Itinerary",
           paragraph: `
@@ -88,7 +88,7 @@ Cactus presents the selected route in a clear, day by day layout, highlighting e
       },
       {
         type: "video",
-        src: "/1-cactus ux/5.mp4",
+        src: "/1-cactus ux/6.mp4",
       },
     ],
   },
@@ -177,8 +177,8 @@ Our image style highlights authentic family moments, surrounded by nature and th
         },
       },
       {
-        type: "image",
-        src: "/2-cactus brand/8.webp",
+        type: "video",
+        src: "/2-cactus brand/8.mp4",
       },
     ],
   },

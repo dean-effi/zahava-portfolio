@@ -20,17 +20,17 @@ export default function page() {
             <dd>
               <a
                 href="mailto:zahava2k3@gmail.com"
-                className="hover:underline focus:outline-2 focus:outline-offset-4">
+                className="underline focus:outline-2 focus:outline-offset-4">
                 zahava2k3@gmail.com
               </a>
             </dd>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <dt className="font-bold">Phone Number:</dt>{" "}
             <dd>
               <a
                 href="tel:+972533231344"
-                className="hover:underline focus:outline-2 focus:outline-offset-4">
+                className="underline focus:outline-2 focus:outline-offset-4">
                 +972-53-323-1344
               </a>
             </dd>
