@@ -22,7 +22,7 @@ export default function page() {
           school graphic design course, and that early curiosity still
           shapes the kind of work I’m drawn to today.
         </p>
-        <a href="#" className="underline">
+        <a href="/resume.pdf" target="_blank" className="underline">
           View Resume{" "}
         </a>
       </div>
