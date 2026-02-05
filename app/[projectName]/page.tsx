@@ -45,12 +45,18 @@ export default async function ProjectPage({
   );
 }
 
-// export async function generateMetadata({ params }) {
-//   const { projectName } = await params;
-//   const decodedName = projectName.replace(/-/g, " ");
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ projectName: string }>;
+}) {
+  const projectName = decodeURIComponent((await params).projectName);
+  const project = projectsData.find(p => projectName === p.name);
 
-//   return {
-//     title: `${decodedName} | Zahava Kallus Portfolio`,
-//     description: ``,
-//   };
-// }
+  return {
+    title: `${projectName} | Zahava Kallus Portfolio`,
+    description:
+      projectsData[projectsData.indexOf(project!)].assets[0]
+        .description?.paragraph,
+  };
+}

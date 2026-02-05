@@ -15,10 +15,10 @@ export default function InfoVisual({
     return (
       <li
         key={name}
-        className="w-[12ch] text-sm md:w-[15ch] md:text-base lg:w-[22ch] lg:text-lg">
+        className="max-w-[30ch] min-w-min text-xs md:w-[20ch] md:text-base lg:w-[28ch] lg:text-lg">
         {" "}
         <div className="font-bold">{name}:</div>
-        <div className="max-w-[50ch]">{info[name]}</div>
+        <div>{info[name]}</div>
       </li>
     );
   });

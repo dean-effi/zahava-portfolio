@@ -21,8 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${playfair.variable} bg-purple-light antialiased`}>
+      <body className={`${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>
