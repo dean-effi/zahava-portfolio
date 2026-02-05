@@ -15,7 +15,7 @@ export default function InfoVisual({
     return (
       <li
         key={name}
-        className="max-w-[30ch] min-w-min text-xs md:w-[20ch] md:text-base lg:w-[28ch] lg:text-lg">
+        className="max-w-[30ch] min-w-min md:w-[20ch] md:text-base lg:w-[28ch] lg:text-lg">
         {" "}
         <div className="font-bold">{name}:</div>
         <div>{info[name]}</div>
@@ -32,7 +32,7 @@ export default function InfoVisual({
         className="w-full"
         priority
       />
-      <ul className="flex flex-wrap justify-between gap-4 py-5 pb-10 capitalize md:pb-22 lg:pb-26">
+      <ul className="flex flex-col flex-wrap justify-between gap-4 py-5 pb-10 capitalize md:flex-row md:pb-22 lg:pb-26">
         {infoBoxes}
       </ul>
     </div>

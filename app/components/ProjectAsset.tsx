@@ -44,9 +44,11 @@ export default function ProjectAsset({
         <div
           className={`mt-5 mb-20 flex flex-col gap-3 text-base leading-tight tracking-tight md:mt-15 md:mb-[160px] md:flex-row md:justify-between md:text-[27px] xl:text-4xl`}>
           {index === 0 ? (
-            <h1 className="font-bold">{asset.description?.title}</h1>
+            <h1 className="font-bold md:max-w-[13ch]">
+              {asset.description?.title}
+            </h1>
           ) : (
-            <h2 className="font-bold">
+            <h2 className="font-bold md:max-w-[13ch]">
               <span className="overflow-clip">
                 {asset.description?.title}
               </span>
